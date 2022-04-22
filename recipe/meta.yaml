@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-zipkin-json" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry-exporter-zipkin-json-{{ version }}.tar.gz
-  sha256: 65a2ead00194f2bb1be5131a682915183a87e6c29b3bc1275f39b6e4eb4ec9b6
+  sha256: 0190947d1ce6f1c90ad4fe799e39af77efd8e984ae5b74885da7b3290cdff875
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python >=3.5
   run:
     - opentelemetry-api ~=1.3
-    - opentelemetry-sdk ~=1.3
+    - opentelemetry-sdk ~=1.11
     - python >=3.5
     - requests ~=2.7
 
